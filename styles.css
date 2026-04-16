@@ -671,3 +671,58 @@ h1, h2, h3, h4, h5, h6 {
 * {
     -webkit-tap-highlight-color: transparent;
 }
+
+
+/* ========================================
+   FIX MOBILE - CATÁLOGO PROPIEDADES
+======================================== */
+@media (max-width: 768px) {
+
+    /* CONTENEDOR GENERAL */
+    .catalogo-luxury {
+        padding: 3rem 0;
+    }
+
+    /* TARJETA */
+    .card-propiedad {
+        border-radius: 16px;
+    }
+
+    /* IMAGEN MÁS PROPORCIONAL */
+    .img-container {
+        height: 200px; /* antes 260px */
+    }
+
+    /* PRECIO MÁS COMPACTO */
+    .precio {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    /* CONTENIDO */
+    .contenido {
+        padding: 1.2rem;
+    }
+
+    .contenido h5 {
+        font-size: 1.1rem;
+    }
+
+    .contenido p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    /* BOTÓN */
+    .btn-propiedad {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    /* ESPACIADO ENTRE CARDS */
+    .row.g-4 {
+        gap: 1rem 0;
+    }
+}
