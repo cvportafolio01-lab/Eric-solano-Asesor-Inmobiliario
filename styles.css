@@ -24,6 +24,13 @@
 }
 
 /* Reset y Base */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -1131,5 +1138,16 @@ h1, h2, h3, h4, h5, h6 {
     section {
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .whatsapp-luxury {
+        right: 15px;
+        bottom: 15px;
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
     }
 }
