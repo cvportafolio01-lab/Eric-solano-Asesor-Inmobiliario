@@ -1079,3 +1079,57 @@ h1, h2, h3, h4, h5, h6 {
         gap: 1rem 0;
     }
 }
+
+
+/* ========================================
+   RESPONSIVE GENERAL (ANDROID + IPHONE)
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* Evita desbordes */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Texto bien justificado y adaptable */
+    p, h1, h2, h3, h4, h5 {
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    /* Contenedores centrados */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Grid siempre en columna */
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Cards ocupan todo el ancho */
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-md-4,
+    .col-md-6 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Justifica contenido interno de cards */
+    .card-luxury,
+    .card-propiedad,
+    .asesora-card {
+        text-align: center;
+    }
+
+    /* Ajuste de espaciado general */
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
