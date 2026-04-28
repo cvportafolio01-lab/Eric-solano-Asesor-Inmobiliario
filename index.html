@@ -169,25 +169,45 @@
 
         <div class="row g-4 justify-content-center">
 
-            <!-- TARJETA ÚNICA -->
-            <div class="col-md-6 col-lg-5">
-                <div class="card-propiedad">
-                    <div class="img-container">
-                        <img src="images/toma1.jpeg" alt="Terrenos en La Cofradía">
-                        <div class="overlay"></div>
-                        <div class="precio">$360,000</div>
-                    </div>
+            <!-- TARJETA ÚNICA 1 -->
+<div class="col-md-6 col-lg-5">
+    <div class="card-propiedad">
+        <div class="img-container">
+            <img src="images/toma1.jpeg" alt="Terrenos en La Cofradía">
+            <div class="overlay"></div>
+            <div class="precio">$360,000</div>
+        </div>
 
-                    <div class="contenido">
-                        <h5>La Cofradía, Tlaquepaque</h5>
-                        <p>Terrenos desde 6x15 m con facilidades de pago</p>
+        <div class="contenido">
+            <h5>La Cofradía, Tlaquepaque</h5>
+            <p>Terrenos desde 6x15 m con facilidades de pago</p>
 
-                        <a href="#contacto" class="btn-propiedad">
-                            Solicitar información
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <a href="#propiedad1" class="btn-propiedad">
+                Solicitar información
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- TARJETA 2 (NUEVA) -->
+<div class="col-md-6 col-lg-5">
+    <div class="card-propiedad">
+        <div class="img-container">
+            <img src="images/lago1.jpeg" alt="Residencial Vista al Lago 2">
+            <div class="overlay"></div>
+            <div class="precio">$410,000</div>
+        </div>
+
+        <div class="contenido">
+            <h5>Vista al Lago 2</h5>
+            <p>Terrenos 8x20 m (160 m²) con financiamiento directo</p>
+
+            <a href="#propiedad2" class="btn-propiedad">
+                Solicitar información
+            </a>
+        </div>
+    </div>
+</div>
 
         </div>
 
@@ -424,32 +444,27 @@
 
     <h2 class="section-title">Conoce el Desarrollo en La Cofradía</h2>
 
-    <div class="video-wrapper">
+    <div class="video-wrapper" style="position:relative;">
 
-        <video id="videoDesarrollo" controls>
+        <video id="videoDesarrollo"
+            controls
+            playsinline
+            preload="metadata"
+            style="width:100%; border-radius:12px;">
+
             <source src="images/video.mp4" type="video/mp4">
             Tu navegador no soporta video.
         </video>
 
         <!-- Botón play visual -->
-        <div class="play-button" onclick="playVideo()">
+        <div class="play-button"
+            onclick="playVideo('videoDesarrollo', this)">
             ▶
         </div>
 
     </div>
 
 </section>
-
-<script>
-function playVideo() {
-    const video = document.getElementById("videoDesarrollo");
-    video.play();
-}
-</script>
-
-
-
-
 
 
 
@@ -497,9 +512,323 @@ function playVideo() {
 </section>
 
 
+<!-- Property Details Section -->
+<section id="propiedad2" class="property-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Vista al Lago 2</span>
+            <h2 class="section-title">Residencial Campestre Vista al Lago 2</h2>
+            <p class="section-subtitle">Terrenos campestres con amenidades exclusivas y financiamiento directo</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Ubicación / Datos base -->
+            <div class="col-lg-6">
+                <div class="card-luxury">
+                    <div class="icono-dorado">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <h3>Características del Terreno</h3>
+                    <ul class="luxury-list">
+                        <li>📐 8 x 20 m = 160 m²</li>
+                        <li>📍 Terrenos campestres en desarrollo privado</li>
+                        <li>🌿 Entorno natural con vista al lago</li>
+                        <li>🏗️ Listos para construir desde el primer día</li>
+                        <li>🔑 Posesión inmediata</li>
+                        <li>📊 Topografía, delimitación y lotes definidos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Financiamiento -->
+            <div class="col-lg-6">
+                <div class="card-luxury">
+                    <div class="icono-dorado">
+                        <i class="bi bi-cash-coin"></i>
+                    </div>
+                    <h3>Inversión y Financiamiento</h3>
+                    <ul class="luxury-list">
+                        <li>💰 Costo total: $410,000</li>
+                        <li>📉 Enganche: $10,000</li>
+                        <li>🏦 Financiamiento: $400,000</li>
+                        <li>📆 120 meses fijos de $3,333</li>
+                        <li>📊 Precio por m²: $2,563</li>
+                        <li>💳 Crédito directo sin aval ni intereses</li>
+                        <li>🎁 Bono de $10,000 + seguro de vida</li>
+                        <li>💰 15% pago de contado / 10% a un año</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- AMENIDADES / SERVICIOS -->
+        <div class="specs-section">
+            <div class="row g-4">
+
+                <!-- AMENIDADES -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h4>Amenidades</h4>
+                        <p>🌅 4 terrazas con vistas</p>
+                        <p>🔥 10 asaderos</p>
+                        <p>🌳 Áreas verdes y arbolado</p>
+                        <p>🎠 2 áreas de juegos infantiles</p>
+                        <p>🔥 2 fogateros</p>
+                        <p>🧊 6 hieleras</p>
+                        <p>🚗 2 estacionamientos</p>
+                        <p>🌄 Mirador panorámico</p>
+                    </div>
+                </div>
+
+                <!-- ENTORNO -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-tree-fill"></i>
+                        </div>
+                        <h4>Entorno y Urbanización</h4>
+                        <p>🛣️ Vialidades de balastre</p>
+                        <p>💡 Luminarias solares</p>
+                        <p>🌿 Áreas verdes amplias</p>
+                        <p>🏞️ Ambiente campestre y natural</p>
+                        <p>🌳 Desarrollo ecológico</p>
+                    </div>
+                </div>
+
+                <!-- SERVICIOS -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4>Servicios Incluidos</h4>
+                        <p>🚰 Agua: pozo propio + estanque de almacenamiento</p>
+                        <p>⚡ Luz: paneles solares</p>
+                        <p>💡 Luminarias solares en todo el desarrollo</p>
+                        <p>🚽 Drenaje: biodigestor o fosa séptica</p>
+                        <p>🔐 Infraestructura ecológica y autosustentable</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-5">
+            <a href="tel:3337309505" class="btn-elegante btn-dorado">
+                📞 Agenda tu cita: 33 3730 9505
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Galería -->
+<section id="galeria-lago" class="gallery-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Visuales</span>
+            <h2 class="section-title">Galería Vista al Lago 2</h2>
+            <p class="section-subtitle">Conoce el entorno, ubicación y lotificación del desarrollo</p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Imagen 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/lago1.jpeg">
+                        <img src="images/lago1.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">📍 Vista del terreno</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/lago2.jpeg">
+                        <img src="images/lago2.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌿 Entorno natural</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/lago3.jpeg">
+                        <img src="images/lago3.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🏞️ Área del desarrollo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/lago4.jpeg">
+                        <img src="images/lago4.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🚧 Accesos</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/lago5.jpeg">
+                        <img src="images/lago5.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">📍 Zona en crecimiento</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 6 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/lago6.jpeg">
+                        <img src="images/lago6.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌄 Vistas del terreno</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 7 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/lago7.jpeg">
+                        <img src="images/lago7.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🏡 Panorama general</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plano -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/lagoplano.jpeg">
+                        <img src="images/lagoplano.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">📐 Plano del desarrollo</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 
 
+<section class="video-section">
+
+    <h2 class="section-title">Conoce Vista al Lago 2</h2>
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-12 col-md-8 col-lg-6">
+
+                <div class="video-wrapper" style="position:relative;">
+
+                    <video id="videoLago"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        poster="images/lago1.jpeg"
+                        style="
+                            width:100%;
+                            max-height:320px;
+                            object-fit:cover;
+                            border-radius:12px;
+                            display:block;
+                        ">
+
+                        <source src="images/lagovideo1.mp4" type="video/mp4">
+                        Tu navegador no soporta video.
+                    </video>
+
+                    <div class="play-button"
+                        onclick="playVideo('videoLago', this)">
+                        ▶
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Location Section -->
+<section id="ubicacion-lago" class="location-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Ubicación</span>
+            <h2 class="section-title">Vista al Lago 2</h2>
+            <p class="section-subtitle">Terrenos campestres con excelente ubicación y plusvalía</p>
+        </div>
+
+        <div class="row g-4 align-items-center">
+
+            <!-- INFO -->
+            <div class="col-lg-5">
+                <div class="card-luxury">
+                    <h3><i class="bi bi-geo-alt-fill me-2"></i>Zona Estratégica</h3>
+                    <ul class="luxury-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Terrenos 8x20 m (160 m²)</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Zona campestre en crecimiento</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Acceso a vialidades principales</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Entorno natural con vistas abiertas</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Ideal para descanso o inversión</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Alta plusvalía proyectada</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- MAPA -->
+            <div class="col-lg-7">
+                <div class="map-container">
+                    <iframe width="100%" height="500"
+                        style="border:0; border-radius: var(--radius-elegante);"
+                        loading="lazy" allowfullscreen
+                        src="https://www.google.com/maps?q=20.400007,-103.287433&z=16&output=embed">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
 
 
@@ -674,21 +1003,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* =========================
-   VIDEO PLAY
-========================= */
-function playVideo() {
-    const video = document.getElementById("videoDesarrollo");
-    const button = document.querySelector(".play-button");
+
+
+
+
+
+
+
+function playVideo(id, btn) {
+    const video = document.getElementById(id);
 
     if (video) {
         video.play();
     }
 
-    if (button) {
-        button.style.display = "none";
+    if (btn) {
+        btn.style.display = "none";
     }
 }
+
+
 </script>
 </body>
 
